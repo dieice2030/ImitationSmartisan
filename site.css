@@ -1,0 +1,232 @@
+* {
+    margin:0;
+    padding:0;
+}
+body{
+    margin:0;  /*浏览器默认8px，替换为0*/
+    overflow:scroll;
+    background: #ededed;
+}
+ul{
+    list-style: none;
+}
+
+.nav-main{
+    /* position: relative; */
+    background-color: #1a1a1a;
+    background-image: linear-gradient(#000,#121212);
+    height:100px;
+    min-width: 1220px;
+}
+
+.nav-sub{
+    height:90px;
+    min-width:1220px;
+}
+
+.nav-container{
+    position: relative;
+    margin:0 149.6px;
+    height:100px;
+}
+
+.main-container{
+    margin:0 auto;
+    width:1222px;
+}
+
+.logo{
+    /* position: relative; */
+    width:50px;
+    float:left;
+    margin:auto;
+    padding:25px 0;   /*实现垂直居中的方式，使上下padiding相等*/
+    margin-left:-5px;
+}
+
+#logo{
+    /* position: relative; */
+    display: block;
+    background-image:url(logo.png);
+    background-position: 0 5px;
+    background-repeat: no-repeat;
+    background-size: cover; /*background-size的值设为cover使得背景得以在保持宽高比的情况下进行缩放*/
+    width: 50px;
+    height: 50px;
+}
+
+.pagnav{
+    position: absolute;      /*absolute是相对与最近的祖先元素的定位，但是如果祖先元素没有position，那么它会相对body元素定位*/
+    display: block;
+    height:28px;
+    right:0;
+    margin:36px 181px 0 0;
+    width:753px;
+}
+
+.pagnav li{
+    height:28px;
+    padding:0 25px;
+    float: left;
+}
+
+.pagnav a{
+    background-color:black;
+    font-family: Helvetica;
+    color:#c8c8c8;
+    font-size: 14px;
+    text-decoration: none;
+    transition: all .15s ease-out;
+}
+
+.pagnav a:hover{
+    color:#fff;
+}
+
+.user{
+    position: absolute;
+    right: 0;
+    top:38px;
+    margin:0;
+}
+.user li,a{
+    float:left;
+    color:white;
+}
+#userHead{
+    display: block;
+    background-image: url(user.png);
+    background-repeat: no-repeat;
+    background-position: -155px 0;
+    width: 20px;
+    height: 20px;
+    margin-left:41px;
+}
+#shoppingMarket{
+    display: block;
+    background-image: url(user.png);
+    background-repeat: no-repeat;
+    background-position: -150px -22px;
+    width: 30px;
+    height: 20px;
+    margin-left:21px;
+}
+
+#userHead:hover{
+    background-position: -5px 0;
+}
+#shoppingMarket:hover{
+    background-position: 0 -22px;
+    background-size: 240px 107px;
+}
+
+.nav-sub ul{
+    position: absolute;
+    left:-10px;
+    top:15px;
+}
+.nav-sub ul li{
+    padding:20px;
+    float: left;
+}
+.nav-sub ul li a{
+    font-size: 14px;
+    color:#666;
+    text-decoration: none;
+}
+.nav-sub ul li a:hover{
+    color:#5079d9;
+}
+
+.carosel{
+    height:500px;
+    width:1220px;
+    background-image: url(carosel1.png);
+    background-size: cover;
+    background-position-y: -30px;
+    /* margin:0 auto; */
+    border:#cdcdcd solid 1px;
+    border-radius: 10px;
+}
+
+.gallary{
+    position: relative;
+    background-color:#dbdbdb;
+    border:#dedede solid 1px;
+    border-radius: 10px;
+    height:200px;
+    overflow:hidden;
+    width:1222px;
+}
+.gallary li{
+    float:left;
+}
+.gallary img{
+    width:304.5px;
+    height:210px;
+    margin:0 auto;
+    border-left:#dedede solid 0.5px;
+    border-right:#dedede solid 0.5px;
+    /* border-image-width:1px; */
+}
+
+.pannels{
+    position: relative;
+    background-color:#dbdbdb;
+    border:#dedede solid 1px;
+    border-radius: 10px;
+    width:1222px;
+    height:491px;
+    overflow: hidden;
+}
+.pannels header{
+    background-color:rgb(250, 250, 250);
+    height:60px;
+    border-bottom:#dedede solid 1px;
+}
+.pannels h3{
+    margin-left:30px;
+    font-size:18px;
+    font-family: "Helvetica Neue";
+    color:rgb(102, 102, 102);
+    font-weight:400;
+    line-height:60px;       /*将line-height设置为与容器等高，可以实现文字垂直居中*/
+}
+.pannel-content li{
+    position: relative;
+    float: left;
+    width:304.5px;
+    height:429px;
+    margin:0 auto;
+    background-color:white;
+    border-left:#dedede solid 0.5px;
+    border-right:#dedede solid 0.5px;
+}
+.pannel-content img{
+    display: block;
+    width:216px;
+    height:216px;
+    text-align: center;
+    margin:45px auto 20px;
+}
+.pannels h4{
+    font-size:14px;
+    font-family: "Helvetica Neue";
+    color:black;
+    font-weight:700;
+    line-height:1.2;
+    text-align: center;
+}
+.pannels p{
+    font-size:12px;
+    font-family: "Helvetica Neue";
+    color: #999;
+    font-weight:400;
+    line-height:14.4px;
+    padding-top:15px;
+    text-align: center;
+}
+.pannels colorRadio{
+    text-align: center;
+}
+

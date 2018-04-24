@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="site.css">
+</head>
+
+<body>
+    <!-- 顶端的导航栏部分 大概分成三个部分（LOGO，导航，用户和购物车 -->
+    <div class="nav-main">
+        <div class="nav-container">
+            <!-- LOGO -->
+            <div class="logo">
+                <!-- LOGO的图片(直接以图片元素插入会使其缩放，作为a元素的背景图片可以以部分显示) -->
+                <a id="logo" href="#"></a>
+
+            </div>
+            <!-- 页面导航 -->
+            <ul class="pagnav">
+                <li>
+                    <a href="#" active>在线商城</a>
+                </li>
+                <li>
+                    <a href="#">坚果 3</a>
+                </li>
+                <li>
+                    <a href="#">坚果 Pro 2</a>
+                </li>
+                <li>
+                    <a href="#">Smartisan OS</a>
+                </li>
+                <li>
+                    <a href="#">欢喜云</a>
+                </li>
+                <li>
+                    <a href="#">应用下载</a>
+                </li>
+                <li>
+                    <a href="#">官方论坛</a>
+                </li>
+            </ul>
+            <!-- 用户和购物车部分 -->
+            <ul class="user">
+                <li>
+                    <a id="userHead"></a>
+                </li>
+                <li>
+                    <a id="shoppingMarket"></a>
+                </li>
+
+                <!-- 购物车后边的计数框感觉太难了，先放着吧 -->
+
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- 次级导航栏部分 -->
+    <div class="nav-sub">
+        <div class="nav-container">
+            <ul>
+                <li>
+                    <a href="#">首页</a>
+                </li>
+                <li>
+                    <a href="#">手机</a>
+                </li>
+                <li>
+                    <a href="#">"足迹"手感膜</a>
+                </li>
+                <li>
+                    <a href="#">官方配件</a>
+                </li>
+                <li>
+                    <a href="#">空气净化类</a>
+                </li>
+                <li>
+                    <a href="#">品牌周边</a>
+                </li>
+                <li>
+                    <a href="#">第三方商品</a>
+                </li>
+                <li>
+                    <a href="#">全部</a>
+                </li>
+                <li>
+                    <a href="#">服务</a>
+                </li>
+                <li>
+                    <a href="#">企业团购</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="main-container">
+        <!-- 轮播部分 -->
+        <div class="carosel">
+            <ul>
+                <!-- 轮播图片序列 -->
+                <li>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 姑且叫做gallary部分好了 -->
+        <br>
+        <div class="gallary">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="1.jpg">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="2.jpg">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="3.jpg">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="4.jpg">
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+        <br>
+
+        <!-- 板块 -->
+        <section class="pannels">
+            <!-- 标题 -->
+            <header>
+                <h3>热门商品</h3>
+            </header>
+            <!-- 内容 -->
+            <div class="pannel-content">
+                <ul>
+                    <a href="#">
+                        <li>
+                            <img src="hot1.png">
+                            <div class="info">
+                                <h4>坚果</h4>
+                                <p>漂亮得不像实力派</p>
+                            </div>
+                            <div class="colorRadio">
+                                <div class="singleRadio"></div>
+                                <div class="singleRadio"></div>
+                                <div class="singleRadio"></div>
+                            </div>
+                            <div class="price">
+                                <p>￥ 1499.00</p>
+                            </div>
+                        </li>
+                    </a>
+
+                    <a>
+                        <li>
+                            <img src="hot2.png">
+                        </li>
+                    </a>
+                    <a>
+                        <li>
+                            <img src="hot3.png">
+                        </li>
+                    </a>
+                    <a>
+                        <li>
+                            <img src="hot4.png">
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+
+</body>
+
+</html>
