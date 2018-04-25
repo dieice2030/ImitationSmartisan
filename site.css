@@ -11,6 +11,66 @@ ul{
     list-style: none;
 }
 
+/* 使用box-shadow实现发光（使水平和垂直偏移均为0即可） */
+.overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+
+    z-index: 1000;  
+}
+.overlay:hover{
+    box-shadow:0 0 30px 0.5px rgb(230, 230, 230) inset;  
+}
+
+#shoppingIcon{
+    position: fixed;
+    background: url(user.png) -49px -43px no-repeat;
+    right:151px;
+    top:71.5px;
+    width:20px;
+    height:8px;
+    z-index: 1000;
+    /* visibility: hidden; */
+}
+#shoppingList{
+    position: fixed;
+    background-color: white;
+    right:100px;
+    top:80px;
+    width:360px;
+    height:314px;
+    z-index: 1000;
+    border-radius: 10px;
+    /* visibility: hidden; */
+}
+.shoppingArea{
+    width:360px;
+    height:180px;
+    margin: 0 auto;
+    background-image: url(shoppingmarket.png);
+    background-position:center 80%;
+    background-repeat: no-repeat;
+}
+#shoppingList h3{
+    font-size:18px;
+    font-family: "Helvetica Neue";
+    color:rgb(73, 73, 73);
+    font-weight:400;
+    text-align: center;
+}
+#shoppingList p{
+    font-size:12px;
+    font-family: "Helvetica Neue";
+    color: #999;
+    font-weight:400;
+    line-height:14.4px;
+    padding-top:15px;
+    text-align: center;
+}
+
 .nav-main{
     /* position: relative; */
     background-color: #1a1a1a;
@@ -22,6 +82,7 @@ ul{
 .nav-sub{
     height:90px;
     min-width:1220px;
+    z-index:2000;
 }
 
 .nav-container{
@@ -159,11 +220,12 @@ ul{
     width:1222px;
 }
 .gallary li{
+    position: relative;
     float:left;
 }
 .gallary img{
     width:304.5px;
-    height:210px;
+    height:202px;
     margin:0 auto;
     border-left:#dedede solid 0.5px;
     border-right:#dedede solid 0.5px;
